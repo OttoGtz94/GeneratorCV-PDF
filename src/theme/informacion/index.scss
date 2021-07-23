@@ -1,0 +1,14 @@
+@mixin spanBtns($color) {
+	color: $color;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.containerInformacion {
+	width: 100%;
+	border: 1px solid transparent;
+	margin-top: 10px;
+	@import './subcontainerShow';
+	@import './tituloSeccion';
+}

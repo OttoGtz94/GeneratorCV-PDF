@@ -1,0 +1,36 @@
+@import './mixin';
+
+form {
+	/* background-color: red; */
+	width: 100%;
+	min-width: 260px;
+	height: 560px;
+	padding: 10px;
+	border: 1px solid #000;
+	overflow-y: scroll;
+
+	@import './grupoForm';
+	.btnAgregarSobreMi,
+	.btnNuevaExperiencia,
+	.btnNuevoEstudio,
+	.btnNuevaHabilidad {
+		@include btnFormStyle($colorBlanco, $colorAzulClaro);
+		@include btnAgregarStyle;
+	}
+	.btnGuardar {
+		@include btnFormStyle($colorBlanco, $colorVerde);
+		width: 70%;
+		margin: 10px auto;
+		.icono {
+			margin-right: 5px;
+		}
+	}
+	.btnGuardarEditado {
+		@include btnFormStyle($colorBlanco, $colorNaranja);
+		width: 70%;
+		margin: 10px auto;
+		.icono {
+			margin-right: 5px;
+		}
+	}
+}

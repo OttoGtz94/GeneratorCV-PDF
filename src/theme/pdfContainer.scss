@@ -1,0 +1,10 @@
+.pdfContainer {
+	/* background-color: #1190c1; */
+	width: 70%;
+	overflow: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	@import './containerBtnGenerar';
+}

@@ -1,0 +1,27 @@
+$colorNegro: #000;
+$colorGrisOscuro: #858080;
+$colorBlanco: #fff;
+$colorAzul: #0a0845;
+$colorGrisClaro: #e1d1f2;
+$colorRojo: #db0101;
+$colorVerde: #00a904;
+$colorAzulClaro: #1190c1;
+$colorNaranja: #f06d00;
+$fuente: 'Roboto', sans-serif;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: $fuente;
+	@import './containerMain';
+}
+@import './swal/index';
+
+@import './header';
+@import './informacion/index';
+@import './formularios/index';
+@import './pdf/pdf';

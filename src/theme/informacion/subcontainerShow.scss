@@ -1,0 +1,27 @@
+.subcontainerShow {
+	width: 100%;
+	background-color: $colorGrisClaro;
+	padding: 8px;
+	margin: 3px 0px;
+	h3 {
+		color: $colorAzul;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span {
+			font-size: 20px;
+			transition: 0.5s;
+		}
+		.textoSpan {
+			font-size: 16px;
+			width: 70%;
+		}
+		.btnEdit {
+			@include spanBtns($colorNaranja);
+		}
+		.btnDelete {
+			@include spanBtns($colorRojo);
+		}
+	}
+}

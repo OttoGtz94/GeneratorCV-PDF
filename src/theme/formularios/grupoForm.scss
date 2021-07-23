@@ -1,0 +1,39 @@
+.grupoForm {
+	/* background-color: gray; */
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	label {
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		font-size: 13px;
+	}
+	input {
+		height: 30px;
+		@include inputsFormStyle;
+	}
+	textarea {
+		padding: 5px 5px 5px 15px;
+		font-size: 15px;
+		max-width: 100%;
+		min-width: 100%;
+		height: 50px;
+		max-height: 100px;
+		min-height: 50px;
+		@include inputsFormStyle;
+	}
+	input[type='file'] {
+		width: 0.1px;
+		height: 0.1px;
+		overflow: hidden;
+		opacity: 0;
+		position: absolute;
+	}
+	label[for='file'] {
+		@include btnFormStyle($colorBlanco, $colorAzul);
+	}
+	.btnEliminarFoto {
+		@include btnFormStyle($colorBlanco, $colorRojo);
+	}
+}

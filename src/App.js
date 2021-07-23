@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import Header from './components/Header';
+import Formulario from './components/Formulario';
+/* import InformacionShow from './components/InformacionShow'; */
+import Pdf from './components/Pdf';
+
+/* Redux */
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Fragment>
+			<Header />
+			<Provider store={store}>
+				<div className='containerMain'>
+					<div className='subcontainerMain'>
+						<Formulario />
+						{/* <InformacionShow /> */}
+					</div>
+					<Pdf />
+				</div>
+			</Provider>
+		</Fragment>
+	);
 }
 
 export default App;

@@ -1,0 +1,19 @@
+.estudios {
+	margin-top: 10px;
+	div {
+		h6 {
+			font-size: 18px;
+			font-weight: 300;
+		}
+		p {
+			font-size: 13px;
+			text-align: left;
+			.icon {
+				color: $colorGrisOscuro;
+			}
+			span {
+				font-weight: 100;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.habilidades {
+	margin-top: 50px;
+	list-style: circle;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	li {
+		font-size: 18px;
+		font-weight: 100;
+		margin: 10px 20px;
+	}
+}

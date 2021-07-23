@@ -1,4 +1,6 @@
 import React from 'react';
+import { usePalette } from 'react-palette';
+import ModeloFoto from '../../images/modelo2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faPhoneAlt,
@@ -6,9 +8,14 @@ import {
 	faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Contacto = ({ sobreMiState }) => {
+const Contacto = ({ sobreMiState, cargarImagenState }) => {
+	const { data } = usePalette(
+		cargarImagenState ? cargarImagenState : ModeloFoto,
+	);
 	return (
-		<div className='contacto'>
+		<div
+			className='contacto'
+			style={{ backgroundColor: data.muted }}>
 			<p>
 				<FontAwesomeIcon icon={faPhoneAlt} />{' '}
 				{sobreMiState.tel1

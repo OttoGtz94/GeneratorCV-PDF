@@ -61,7 +61,10 @@ const HojaPDF = React.forwardRef(props => {
 						: null}
 				</ul>
 			</div>
-			<Contacto sobreMiState={sobreMiState} />
+			<Contacto
+				sobreMiState={sobreMiState}
+				cargarImagenState={cargarImagenState}
+			/>
 		</div>
 	);
 });

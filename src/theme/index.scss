@@ -16,6 +16,7 @@ $fuente: 'Roboto', sans-serif;
 
 body {
 	background-color: #fff;
+	// min-width: 1277px;
 	font-family: $fuente;
 	@import './containerMain';
 }

@@ -45,7 +45,7 @@ const SobreMiForm = ({
 				inputType='text'
 				inputName='tel1'
 				inputId='tel1'
-				inputPlaceholder='5620924284'
+				inputPlaceholder='56-2029-4248'
 				onChangue={onChangue}
 			/>
 			<GrupoForm
@@ -55,7 +55,7 @@ const SobreMiForm = ({
 				inputType='text'
 				inputName='tel2'
 				inputId='tel2'
-				inputPlaceholder='5545860980'
+				inputPlaceholder='55-4568-9080'
 				onChangue={onChangue}
 			/>
 			<GrupoForm

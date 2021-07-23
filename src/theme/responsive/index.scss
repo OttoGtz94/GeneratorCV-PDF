@@ -1,0 +1,17 @@
+@media screen and (max-width: 1277px) {
+	.subcontainerMain {
+		width: 100% !important;
+	}
+	.pdfContainer {
+		width: 100% !important;
+		.containerBtnGenerar {
+			width: 100% !important;
+		}
+		.contarineBtnConfiguracion {
+			width: 100% !important;
+		}
+		.pdf {
+			display: none;
+		}
+	}
+}

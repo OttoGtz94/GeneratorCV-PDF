@@ -7,4 +7,26 @@
 	justify-content: center;
 	align-content: flex-start;
 	@import './containerBtnGenerar';
+	@import './paletaColores/containerColorPalette';
+	.contarineBtnConfiguracion {
+		width: 50%;
+		// background-color: red;
+		height: 40px;
+		display: flex;
+		justify-content: flex-end;
+		padding: 10px;
+		margin-bottom: 30px;
+		.btnConfiguracion {
+			background-color: transparent;
+			border: 1px solid transparent;
+			font-size: 30px;
+			color: $colorGrisClaro;
+			cursor: pointer;
+			transition: 1s;
+			&:hover {
+				color: $colorGrisOscuro;
+				transform: rotate(360deg);
+			}
+		}
+	}
 }

@@ -7,11 +7,20 @@ const Header = () => {
 	const cargarImagenState = useSelector(
 		state => state.imagen.imagen,
 	);
+
+	const maincolor = useSelector(
+		state => state.configuracion.maincolor,
+	);
 	const { data } = usePalette(
 		cargarImagenState ? cargarImagenState : ModeloFoto,
 	);
 	return (
-		<header style={{ background: data.muted }}>
+		<header
+			style={
+				maincolor
+					? { background: maincolor }
+					: { background: data.muted }
+			}>
 			<h1>Generator CV</h1>
 		</header>
 	);

@@ -6,7 +6,7 @@ import ExperienciasLaborales from './ExperienciasLaborales';
 import Estudios from './Estudios';
 
 const HojaPDF = React.forwardRef(props => {
-	const { pdfRef } = props;
+	const { pdfRef, maincolor } = props;
 
 	const sobreMiState = useSelector(
 		state => state.sobreMi.sobreMi,
@@ -37,14 +37,17 @@ const HojaPDF = React.forwardRef(props => {
 		state => state.habilidad.banderahabilidades,
 	);
 
-	useEffect(() => {
-		console.log('pdf recargado');
-	}, [banderaExperiencia, banderaEstudio, banderaHabilidad]);
+	useEffect(() => {}, [
+		banderaExperiencia,
+		banderaEstudio,
+		banderaHabilidad,
+	]);
 	return (
 		<div ref={pdfRef} className='pdf'>
 			<AcercaDe
 				sobreMiState={sobreMiState}
 				cargarImagenState={cargarImagenState}
+				maincolor={maincolor}
 			/>
 			<div className='formacion'>
 				<ExperienciasLaborales
@@ -64,6 +67,7 @@ const HojaPDF = React.forwardRef(props => {
 			<Contacto
 				sobreMiState={sobreMiState}
 				cargarImagenState={cargarImagenState}
+				maincolor={maincolor}
 			/>
 		</div>
 	);

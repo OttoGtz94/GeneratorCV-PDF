@@ -3,14 +3,26 @@ import { usePalette } from 'react-palette';
 import { lorem } from '../../utils';
 import ModeloFoto from '../../images/modelo2.jpg';
 
-const AcercaDe = ({ sobreMiState, cargarImagenState }) => {
+const AcercaDe = ({
+	sobreMiState,
+	cargarImagenState,
+	maincolor,
+}) => {
 	const { data } = usePalette(
 		cargarImagenState ? cargarImagenState : ModeloFoto,
 	);
+
 	return (
 		<div
 			className='acercaDe'
-			style={{ backgroundColor: data.muted }}>
+			style={
+				maincolor
+					? { backgroundColor: maincolor }
+					: { backgroundColor: data.muted }
+			}>
+			{/* {maincolor
+				? console.log(`Color AcercaDe: ${maincolor}`)
+				: console.log('No hay color')} */}
 			<h2>
 				{sobreMiState.nombre
 					? sobreMiState.nombre

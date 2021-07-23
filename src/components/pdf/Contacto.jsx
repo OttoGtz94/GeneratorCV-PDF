@@ -8,14 +8,22 @@ import {
 	faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Contacto = ({ sobreMiState, cargarImagenState }) => {
+const Contacto = ({
+	sobreMiState,
+	cargarImagenState,
+	maincolor,
+}) => {
 	const { data } = usePalette(
 		cargarImagenState ? cargarImagenState : ModeloFoto,
 	);
 	return (
 		<div
 			className='contacto'
-			style={{ backgroundColor: data.muted }}>
+			style={
+				maincolor
+					? { backgroundColor: maincolor }
+					: { backgroundColor: data.muted }
+			}>
 			<p>
 				<FontAwesomeIcon icon={faPhoneAlt} />{' '}
 				{sobreMiState.tel1

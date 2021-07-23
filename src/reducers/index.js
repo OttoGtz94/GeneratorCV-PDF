@@ -4,6 +4,7 @@ import experienciaReducer from './experienciaLaboral.reducer';
 import estudiosReducer from './estudios.reducer';
 import habilidadReducer from './habilidad.reducer';
 import imagenReducer from './imagen.reducer';
+import configuracionReducer from './configuracion.reducer';
 
 export default combineReducers({
 	sobreMi: sobreMiReducer,
@@ -11,4 +12,5 @@ export default combineReducers({
 	experiencia: experienciaReducer,
 	estudio: estudiosReducer,
 	habilidad: habilidadReducer,
+	configuracion: configuracionReducer,
 });

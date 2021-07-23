@@ -1,0 +1,79 @@
+.containerColorPalette {
+	position: absolute;
+	z-index: 1000;
+	margin: 20px;
+	// padding: 20px;
+	left: 0px;
+	/* width: 100%;
+	height: 100vh; */
+	background-color: rgba($color: #000000, $alpha: 1);
+	border-radius: 3px;
+	box-shadow: 0px 0px 50px #000;
+	.containerBtnCerrarConfiguracion {
+		/* background-color: aqua; */
+		position: relative;
+		width: 100%;
+		text-align: right;
+		padding: 7px;
+		.btnCerrarConfiguracion {
+			color: $colorBlanco;
+			cursor: pointer;
+			font-size: 20px;
+			transition: 0.5s ease;
+			&:hover {
+				color: $colorRojo;
+			}
+		}
+	}
+	.containerColorPicker {
+		padding: 0px 20px;
+	}
+	.muestraColor {
+		width: 100%;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 900;
+		color: #fff;
+		margin: 10px 0px;
+	}
+	.containerBotonera {
+		// background-color: aqua;
+		width: 100%;
+		padding: 7px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.btnGuardarColor,
+		.btnReset {
+			// width: 50px;
+			cursor: pointer;
+			padding: 5px 7px;
+			font-size: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid transparent;
+			border-radius: 3px;
+			.icon {
+				font-size: 20px;
+				margin-right: 5px;
+				color: #fff;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+			&:focus {
+				border: 1px solid transparent;
+			}
+		}
+		.btnGuardarColor {
+			background-color: $colorVerde;
+			color: #fff;
+		}
+		.btnReset {
+			background-color: $colorNaranja;
+		}
+	}
+}
